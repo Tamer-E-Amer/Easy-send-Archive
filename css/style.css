@@ -1,0 +1,707 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,600&display=swap');
+        /* Global settings */
+        /* variables */
+        
+         :root {
+            --red: #9A2320;
+            --text-color: #2B2B2B;
+            --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            --border: 1px solid #bdb7b7;
+        }
+        /* common settings */
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: all .5s ease-in-out;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        /* Header Begin */
+        
+        .upheader {
+            height: 1rem;
+            width: 100%;
+            background-color: #313131;
+        }
+        
+        .header {
+            padding: 1.5rem 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        
+        .header .logo {
+            width: 21rem;
+            height: 9rem;
+        }
+        
+        .header div {
+            /* width: 40%; */
+            text-align: center;
+        }
+        
+        .header .login-data {
+            padding-top: 20px;
+            font-size: 1.5rem;
+            width: 20%;
+        }
+        
+        .header .login-data span {
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        
+        .header .login-data span:first-child {
+            color: var(--red);
+            font-weight: bold;
+        }
+        
+        .header .nav-bar {
+            font-size: 2rem;
+            width: 50%;
+        }
+        
+        .header .nav-bar i {
+            color: white;
+            margin: 0 2rem;
+        }
+        
+        .header .menu-back {
+            position: absolute;
+            width: 50%;
+            top: .1px;
+            right: 4%;
+            z-index: -1000;
+        }
+        
+        .header #menu-bars {
+            color: var(--red);
+            font-size: 2.5rem;
+            display: none;
+        }
+        /* Header End */
+        /* archive stsem begin - pages:index - about */
+        
+        .archive-sys {
+            padding: 1% 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 400px;
+        }
+        
+        .archive-sys .sys-data {
+            padding-left: 4rem;
+            width: 50%;
+        }
+        
+        .archive-sys .sys-data h2 {
+            color: red;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+        }
+        
+        .archive-sys .sys-data p {
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+        }
+        
+        .archive-sys .sys-data ul {
+            margin-top: 3rem;
+            padding-left: 8rem;
+        }
+        
+        .archive-sys .sys-data ul li {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .archive-sys .sys-img,
+        .archive-sys .about-img {
+            padding-top: 2%;
+            width: 50%;
+            text-align: center;
+        }
+        
+        .archive-sys .sys-img img {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .archive-sys .about-img img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .archive-sys .red-left-decore {
+            position: absolute;
+            left: 0px;
+            top: 10rem;
+            height: 250px;
+        }
+        /* archive stsem end */
+        /* feature section Begin for index and about pages */
+        
+        .login,
+        .add-user {
+            height: 79.6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* pages: login - add_user - upload */
+        
+        .login .login-form,
+        .add-user .add-user-form {
+            width: 480px;
+            height: 300px;
+            flex-direction: column;
+            border: var(--border);
+            border-radius: 40px;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login .login-form .form-row,
+        .add-user .add-user-form .form-row {
+            width: 80%;
+            text-align: center;
+        }
+        
+        .login .login-form img,
+        .add-user .add-user-form img {
+            position: absolute;
+            top: -40px;
+            right: 42%;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .login .login-form input,
+        .upload-data .upload-data-form .form-row input,
+        .upload-data .upload-data-form .form-row select,
+        .add-user .add-user-form .form-row input {
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            border: var(--border);
+            height: 1rem;
+            width: 60%;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .login .login-form label,
+        .upload-data .upload-data-form .form-row label,
+        .add-user .add-user-form .form-row label {
+            font-size: 1.5rem;
+            margin-right: 5px;
+            color: var(--text-color);
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        .login .login-form .btn-form,
+        .upload-data .upload-data-form .btn-form,
+        .add-user .add-user-form .btn-form {
+            width: 150px;
+            height: 35px;
+            background-color: var(--red);
+            color: #fff;
+            border-radius: 40px;
+            box-shadow: var(--box-shadow);
+            cursor: pointer;
+            transition: all .5s ease-out;
+            font-size: 1.5rem;
+        }
+        
+        .login .login-form .btn-form:hover,
+        .upload-data .upload-data-form .btn-form:hover,
+        .add-user .add-user-form .btn-form:hover {
+            background-color: #ddd;
+            border: 1px solid var(--red);
+            color: var(--red);
+        }
+        
+        .add-user .add-user-form {
+            padding-top: 30px;
+            height: 370px;
+        }
+        /* feature section Begin pages: index - about */
+        
+        .features,
+        .features-about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5%;
+            height: 365px;
+        }
+        
+        .features .feature-icons,
+        .features-about .feature-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+        
+        .features .feature-icons .icon,
+        .features-about .feature-icons .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 1.5rem;
+        }
+        
+        .features .feature-icons .icon span,
+        .features-about .feature-icons .icon span {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--red);
+        }
+        
+        .features .feature-icons .icon img,
+        .features-about .feature-icons .icon img {
+            width: 75px;
+            height: 75px;
+        }
+        
+        .features .features-data,
+        .features-about .features-data {
+            margin-top: 20px;
+            text-align: left;
+            padding: 0 5%;
+            width: 50%;
+        }
+        
+        .features .features-data h2,
+        .features-about .features-data h2 {
+            color: red;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .features .features-data p,
+        .features-about .features-data p {
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+            padding-right: 9%;
+        }
+        /* feature section End */
+        /* upload data begin pages: upload -search */
+        
+        .upload-data {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .upload-data .upload-left-red-decore {
+            position: absolute;
+            left: 0;
+            top: 65px;
+            height: 200px;
+            width: 60px;
+        }
+        
+        .upload-data .upload-form-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .upload-data .upload-form-header span {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        
+        .upload-data .upload-form-header img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .upload-data .upload-data-form,
+        .upload-data .uploaded-data {
+            width: 1000px;
+            height: 200px;
+            flex-direction: row;
+            padding: 20px 0;
+            margin-bottom: 10px;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            border-radius: 40px;
+        }
+        
+        .upload-data .uploaded-data {
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .upload-data .upload-data-form {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        
+        .upload-data .upload-data-form .form-row {
+            grid-column: span 6;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .upload-data .upload-data-form .form-row input,
+        .upload-data .upload-data-form .form-row select {
+            margin-bottom: 0;
+        }
+        
+        .upload-data .upload-data-form .form-row input[type=file] {
+            height: 4rem;
+            padding: 10px 10px 10px 20px;
+        }
+        
+        .upload-data .upload-data-form .form-row label {
+            display: block;
+            width: 130px;
+            text-align: right;
+            color: var(--text-color);
+            border: none;
+        }
+        /* upload data end */
+        /* Footer Begin */
+        
+        footer {
+            width: 100%;
+            margin-top: 20px;
+            height: 50px;
+            position: relative;
+        }
+        
+        footer span {
+            padding-top: 20px;
+            position: absolute;
+            right: 20%;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        footer .bottom-decore,
+        footer .right-bottom-decore {
+            position: absolute;
+            bottom: 0;
+        }
+        
+        footer .bottom-decore {
+            right: 55%;
+        }
+        
+        footer .right-bottom-decore {
+            right: 0;
+            height: 450px;
+        }
+        
+        footer .login-left-decore {
+            position: absolute;
+            bottom: 0;
+            width: 280px;
+        }
+        /* Footer End */
+        /* Media Query */
+        
+        @media(min-width:991px) and (max-width:1236px) {
+            html {
+                font-size: 55%;
+            }
+            .header {
+                padding: 1.5rem;
+            }
+            /* uploading data */
+            .upload-data .upload-data-form,
+            .upload-data .uploaded-data {
+                width: 850px;
+            }
+            /* footer */
+            footer .bottom-decore {
+                right: 60%;
+            }
+            footer .login-left-decore {
+                width: 160px;
+            }
+        }
+        
+        @media(max-width:768px) {
+            html {
+                font-size: 55%;
+            }
+            .header {
+                padding: 1.5rem 5%;
+            }
+            .header .login-data {
+                width: 45%;
+                text-align: right;
+            }
+            .header #menu-bars {
+                width: 10%;
+                text-align: right;
+            }
+            .header .menu-back,
+            .header .nav-bar {
+                display: none;
+                color: var(--red);
+                position: absolute;
+                background-color: #fff;
+                width: 20%;
+                top: 6rem;
+                right: 5%;
+                z-index: 2000;
+            }
+            .header .nav-bar.active {
+                display: block;
+            }
+            .header .nav-bar.active a {
+                display: block;
+                padding: .5rem 0;
+                margin: .5rem 0;
+                background-color: var(--red);
+                transition: all 0.5s ease-out;
+            }
+            .header .nav-bar.active a:hover,
+            .header .nav-bar.active a:focus {
+                background-color: #ddd;
+            }
+            .header .nav-bar.active a:hover i,
+            .header .nav-bar.active a:focus i {
+                color: var(--red);
+            }
+            .header #menu-bars {
+                display: inline-block;
+                padding-top: 2rem;
+                cursor: pointer;
+            }
+            /* index and about resize */
+            .features-about .features-data {
+                width: 55%;
+                padding-right: 0;
+            }
+            .features-about .features-data p {
+                padding-right: 10px;
+            }
+            .features-about .feature-icons {
+                width: 40%;
+            }
+            footer .bottom-decore {
+                right: 80%;
+            }
+            .archive-sys .sys-data ul {
+                padding-left: 3rem;
+            }
+            /* upload data */
+            .upload-data .upload-data-form,
+            .upload-data .uploaded-data {
+                width: 700px;
+                background-color: #fff;
+                z-index: 50;
+            }
+            /* footer */
+            footer .login-left-decore {
+                width: 160px;
+            }
+            footer .bottom-decore {
+                display: none;
+            }
+        }
+        
+        @media(max-width:540px) {
+            /* index - about responsive */
+            .archive-sys {
+                flex-wrap: wrap-reverse;
+                height: 500px;
+            }
+            .archive-sys .sys-img,
+            .archive-sys .about-img,
+            .archive-sys .sys-data {
+                width: 100%;
+                text-align: center;
+                padding: 0 5%;
+            }
+            .archive-sys .sys-data ul {
+                margin-bottom: 25px;
+            }
+            /* features */
+            .features {
+                flex-wrap: wrap;
+            }
+            .features-about {
+                flex-wrap: wrap-reverse;
+            }
+            .features .features-data,
+            .features .feature-icons,
+            .features-about .features-data,
+            .features-about .feature-icons {
+                width: 100%;
+                text-align: center;
+            }
+            .features-about .features-data {
+                padding-right: 20px;
+            }
+            .upload-data .upload-data-form .form-row input[type=file] {
+                height: 4.5rem;
+                padding: 10px 10px 10px 20px;
+            }
+            /* login form */
+            .login .login-form {
+                width: 380px;
+                height: 250px;
+            }
+            /* upload data */
+            .upload-data .upload-data-form,
+            .upload-data .uploaded-data {
+                width: 500px;
+                background-color: #fff;
+                z-index: 1200;
+            }
+            .upload-data .upload-data-form {
+                height: 350px;
+                padding: 15px 0;
+                padding-right: 40px;
+            }
+            .upload-data .upload-data-form .form-row {
+                grid-column: span 12;
+                margin-bottom: 10px;
+            }
+            .upload-data .upload-data-form .form-row .btn-form {
+                margin-top: 10px;
+            }
+            /* add-user begin */
+            .add-user .add-user-form {
+                height: 350px;
+                width: 500px;
+                z-index: 1200;
+                background-color: #fff;
+            }
+            /* add-user end */
+            /* footer */
+            footer .bottom-decore {
+                display: none;
+            }
+            footer .right-bottom-decore {
+                width: 120px;
+            }
+            footer span {
+                right: 25%;
+            }
+            footer .login-left-decore {
+                width: 100px;
+            }
+        }
+        
+        @media(max-width:450px) {
+            .header {
+                justify-content: space-around;
+                ;
+            }
+            .header .login-data {
+                width: 60%;
+                order: 3;
+                text-align: center;
+            }
+            .header #menu-bars {
+                order: 2;
+                width: 10%;
+            }
+            /* system data section : index - about resize*/
+            .archive-sys {
+                flex-wrap: wrap-reverse;
+                height: 550px;
+            }
+            .archive-sys .sys-img {
+                width: 100%;
+                padding: 0 5%;
+            }
+            .archive-sys .sys-data {
+                width: 100%;
+            }
+            .archive-sys .sys-data h2 {
+                text-align: center;
+            }
+            .archive-sys .sys-data p {
+                padding: 0 5%;
+            }
+            .archive-sys .red-left-decore {
+                display: none;
+            }
+            /* upload page and search page */
+            .upload-data .upload-data-form,
+            .upload-data .uploaded-data {
+                width: 430px;
+                background-color: #fff;
+                z-index: 50;
+            }
+            /* login form */
+            .login {
+                height: 75.6vh;
+            }
+            .login .login-form {
+                width: 310px;
+            }
+            /* add-user begin */
+            .add-user .add-user-form {
+                width: 410px;
+            }
+            .add-user .add-user-form .form-row {
+                width: 100%;
+            }
+            .add-user .add-user-form .form-row label {
+                width: 110px;
+            }
+            /* add-user end */
+            /* footer */
+            footer .right-bottom-decore {
+                width: 105px;
+            }
+            footer span {
+                font-size: 1.2rem;
+                right: 25%;
+            }
+            footer .login-left-decore {
+                display: none;
+            }
+        }
